@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
 .menu {
+    background-color: $mainDarkColor;
     width: 300px;
     height: 100vh;
-    background-color: $mainOrange;
     position: fixed;
     top: 0;
     right: -300px;
@@ -12,8 +12,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all .5s ease;
 
     &.active {
         right: 0pt;
+        background-color: $mainOrange;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        font-size: 35px;
+        color: $mainDarkColor;
+
+        li {
+        margin: 25px;
+        height: 50px;
+        transition: all .2s ease;
+
+            a {
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover {
+                font-size: 37px;
+            }
+        }
     }
 }
