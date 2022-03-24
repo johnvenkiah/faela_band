@@ -2,7 +2,7 @@
 
 .topnav {
     background-color: $mainDarkColor;
-    color: $mainLightColor;
+    color: $mainOrange;
     width: 100%;
     height: 70px;
     position: fixed;
@@ -10,7 +10,7 @@
     z-index: 2;
 
     .wrapper {
-        padding: 10px 30px;
+        padding: 5px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -31,19 +31,16 @@
                 display: flex;
                 align-items: center;
                 margin-left: 25px;
-                color: $mainOrange;
 
                 .menu-icon {
                     font-size: 20px;
                     margin-right: 6px;
-                    text-shadow: rgba(0, 0, 0, 0.8) 0 0 6px;
                 }
 
                 span {
                     font-size: 20px;
                     text-transform: uppercase;
                     font-weight: bold;
-                    text-shadow: rgba(0, 0, 0, 0.8) 0 0 6px;
                 }
             }
         }
@@ -61,8 +58,36 @@
                     width: 100%;
                     height: 4px;
                     background-color: $mainOrange;
+                    transform-origin: left;
+                    transition: all .5s ease;
                 }
 
+            }
+        }
+    }
+
+    &.active {
+        background-color: $mainOrange;
+        color: $mainDarkColor;
+
+        .hamburger {
+            padding: 1px;
+            span {
+                height: 3px !important;
+
+                &:first-child {
+                    background-color: $mainDarkColor;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    background-color: $mainDarkColor;
+                    transform: rotate(-45deg);
+                }
             }
         }
     }

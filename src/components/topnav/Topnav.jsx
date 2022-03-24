@@ -1,8 +1,8 @@
 import "./topnav.scss"
 
-export default function Topnav() {
+export default function Topnav({ openMenu, setOpenMenu }) {
   return (
-    <div className="topnav">
+    <div className={"topnav " + (openMenu && "active")}>
         <div className="wrapper">
             <div className="left">
                 <a href="#home" className="main-logo">FAELA</a>
@@ -16,7 +16,7 @@ export default function Topnav() {
                 </div>
             </div>
             <div className="right">
-              <div className="hamburger">
+              <div className="hamburger" onClick={() => setOpenMenu(!openMenu)}>
                 <span className="line-1"></span>
                 <span className="line-2"></span>
                 <span className="line-3"></span>
