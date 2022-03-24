@@ -7,7 +7,6 @@ export default function Topnav() {
             <div className="left">
                 <a href="#home" className="main-logo">FAELA</a>
             </div>
-            <h1>FAELA</h1>
             <div className="right">RIGHT SIDE</div>
         </div>
     </div>

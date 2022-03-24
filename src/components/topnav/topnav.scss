@@ -14,5 +14,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .left {
+            .main-logo {
+                font-size: 45px;
+                font-weight: bold;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
     }
 }
