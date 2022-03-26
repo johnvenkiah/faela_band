@@ -2,4 +2,15 @@
 
 .home {
     background-color: $mainLightColor;
+    display: flex;
+
+    .left {
+        flex: .5;
+        background: #999;
+    }
+
+    .right {
+        flex: .5;
+        background: #EEE;
+    }
 }
