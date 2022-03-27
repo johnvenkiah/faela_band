@@ -8,7 +8,9 @@ export default function Home() {
           <img src="assets/cover_faela_lab.jpg" alt="CD-cover for album Latin Animal Beats" />
         </div>
       </div>
-      <div className="right"></div>
+      <div className="right">
+        
+      </div>
     </div>
   )
 }

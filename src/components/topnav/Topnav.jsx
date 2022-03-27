@@ -7,13 +7,14 @@ export default function Topnav({ openMenu, setOpenMenu }) {
             <div className="left">
                 <a href="#home" className="mainLogo">
                   <img src="assets/faela_logo_white.png" alt="Faela Logo" className="logoImg" />
+                  <img src="assets/faela_logo_white.png" alt="Faela Logo" className="logoImgInner" />
                 </a>
                 <div className="menuItem">
-                  <i className="menu-icon fa-solid fa-headphones"></i>
+                  <i className="menuIcon fa-solid fa-headphones"></i>
                   <span>Listen</span>
                 </div>
                 <div className="menuItem">
-                  <i className="menu-icon fa-solid fa-champagne-glasses"></i>
+                  <i className="menuIcon fa-solid fa-champagne-glasses"></i>
                   <span>Book Us</span>
                 </div>
             </div>

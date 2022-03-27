@@ -22,22 +22,38 @@
 
             .mainLogo {
                 font-size: 45px;
-                font-weight: bold;
-                text-decoration: none;
-                color: inherit;
                 margin-right: 35px;
+                padding-right: 2px;
+                transition: all .5s ease;
 
                 .logoImg {
                     width: 110px;
                 }
+
+                .logoImgInner {
+                    width: 110px;
+                    margin-left: -110px;
+                    filter: invert(49%) sepia(95%) saturate(1190%) hue-rotate(10deg) brightness(105%) contrast(101%);
+                    opacity: 0;
+                    transition: all .5s ease;
+    
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
+
 
             .menuItem {
                 display: flex;
                 align-items: center;
                 margin-left: 25px;
 
-                .menu-icon {
+                .menuIcon {
                     font-size: 20px;
                     margin-right: 6px;
                 }
@@ -51,6 +67,7 @@
         }
 
         .right {
+
             .hamburger {
                 width: 35px;
                 height: 27px;
