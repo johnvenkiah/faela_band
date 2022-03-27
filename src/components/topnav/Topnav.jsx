@@ -5,7 +5,9 @@ export default function Topnav({ openMenu, setOpenMenu }) {
     <div className={"topnav " + (openMenu && "active")}>
         <div className="wrapper">
             <div className="left">
-                <a href="#home" className="main-logo">FAELA</a>
+                <a href="#home" className="mainLogo">
+                  <img src="assets/faela_logo_white.png" alt="Faela Logo" className="logoImg" />
+                </a>
                 <div className="menuItem">
                   <i className="menu-icon fa-solid fa-headphones"></i>
                   <span>Listen</span>
