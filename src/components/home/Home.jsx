@@ -9,7 +9,11 @@ export default function Home() {
         </div>
       </div>
       <div className="right">
-        
+        <div className="homeRightContainer">
+          <h1>Faela's new album </h1>
+          <h2>Latin Animal Beats</h2>
+          <h3>Out this summer</h3>
+          </div>
       </div>
     </div>
   )
