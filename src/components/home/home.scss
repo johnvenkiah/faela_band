@@ -57,10 +57,37 @@
                 margin: 20px auto;
             }
             h3 {
-                margin-top: 60%;
+                margin-top: 40%;
+                margin-bottom: 20%;
                 font-size: 50px;
             }
+            
+            h4 {
+                font-size: 30px;
+            }
 
+            i {
+                font-size: 40px;
+                color: $mainLightColor;
+                text-decoration: none;
+                animation: flash 2s infinite;
+
+                &:hover {
+                    color: $mainOrange;
+                }
+            }
+
+            @keyframes flash {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
         }
     }
 }
