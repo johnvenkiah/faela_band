@@ -13,12 +13,12 @@ export default function Home() {
           <h1>Faela's new album</h1>
           <h2>Latin Animal Beats</h2>
           <h3>Out Summer 2022</h3>
-          <h4>
-              Continue to music
-          </h4>
-          <a href="#music">
-          <i class="fa-solid fa-chevron-down"></i>
-          </a>
+            <a className="btnMain" href="#music">
+            <p>
+                Continue to music
+            </p>
+            <i class="fa-solid fa-chevron-down"></i>
+            </a>
         </div>
       </div>
     </div>

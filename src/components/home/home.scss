@@ -66,16 +66,43 @@
                 font-size: 30px;
             }
 
-            i {
-                font-size: 40px;
-                color: $mainLightColor;
+            .btnMain {
+                padding: 10px;
+                background-color: #2c0926d0;
+                border: 2px solid $mainOrange;
+                font-size: 25px;
+                border-radius: 20px;
+                width: fit-content;
+                margin: 0 auto;
                 text-decoration: none;
-                animation: flash 2s infinite;
+                color: $mainLightColor;
+                transition: all .5s ease;
 
+                p {
+                    padding: 5px;
+                }
+                
+                i {
+                    transition: all .5s ease;
+                    font-size: 40px;
+                    color: $mainLightColor;
+                    animation: flash 2s infinite;
+                    padding: 5px;
+                }
                 &:hover {
+                    transform: scale(1.01);
                     color: $mainOrange;
+                    background-color: #00000080;
+                    text-shadow: #ffffff80 0 0 7px;
+                    box-shadow: black 0 0 15px;
+                    
+                    i {
+                        color: $mainOrange;
+                        text-shadow: #ffffff80 0 0 7px;
+                    }
                 }
             }
+
 
             @keyframes flash {
                 0% {
