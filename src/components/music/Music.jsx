@@ -1,15 +1,38 @@
-import "./music.scss"
+import MusicList from "../musicList/MusicList";
+import "./music.scss";
 
 export default function Music() {
+
+  const list = [
+    {
+      id: "por_el_mundo",
+      title: "Por El Mundo (2016)",
+    },
+    {
+      id: "conmigo",
+      title: "Conmigo (2013)",
+    },
+    {
+      id: "camina",
+      title: "Camina (2011)",
+    },
+    {
+      id: "faela_faela",
+      title: "Faela (2011)",
+    },
+  ];
+
   return (
     <div className="music" id="music">
       <h1>Music</h1>
-      <ul>
-      <li className="active">Por El Mundo (2016)</li>
-        <li>Con Miga (2013)</li>
-        <li>Camina (2011)</li>
-        <li>Faela (2011)</li>
-      </ul>
+      {/* <ul>
+        {list.map((item) => (
+          <MusicList
+            title={item.title}
+            id={item.id}
+          />
+        ))}
+      </ul> */}
       <div className="container">
         <div className="album">
           <img className="albumCover" src="/assets/cover_faela_porelmundo.jpg" alt="Faela Por El Mundo Album Cover" />

@@ -1,13 +1,18 @@
 @import "../../global.scss";
 
 .music {
-    background-color: $mainLightColor;
+    background: linear-gradient(45deg, $mainDarkColor 35%, #00000080 35%, #00000080 75%, $mainOrange 75%),
+    url('../../../public/assets/faela_audience.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     
     h1 {
         font-size: 50px;
+        color: $mainOrange;
+        margin: 20px auto;
     }
 
     ul {
