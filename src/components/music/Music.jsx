@@ -35,7 +35,7 @@ export default function Music() {
           </div>
         </div>
         <div className="album">
-          <img className="albumCover" src="/assets/cover_faela_conmigo.jpg" alt="Faela Por El Mundo Album Cover" />
+          <img className="albumCover" src="/assets/cover_faela_conmigo.jpg" alt="Faela Conmigo Album Cover" />
           <p className="p2Album">Conmigo (2013)</p>
           <p>Play on</p>
           <div className="playBtnContainer">
@@ -44,7 +44,7 @@ export default function Music() {
             <span> Spotify</span>
           </a>
           <a className="playBtn" href="https://music.apple.com/se/album/conmigo/603066344?l=en" rel="noreferrer" target="_blank">
-          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Tidal Logo" />
+          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Apple Music Logo" />
             <span> Apple Music</span>
           </a>
           <a className="playBtn" href="https://tidal.com/browse/album/88307663" rel="noreferrer" target="_blank">
@@ -58,7 +58,7 @@ export default function Music() {
           </div>
         </div>
         <div className="album">
-          <img className="albumCover" src="/assets/cover_faela_camina.jpg" alt="Faela Por El Mundo Album Cover" />
+          <img className="albumCover" src="/assets/cover_faela_camina.jpg" alt="Faela Camina Album Cover" />
           <p className="p2Album">Camina (2011)</p>
           <p>Play on</p>
           <div className="playBtnContainer">
@@ -67,7 +67,7 @@ export default function Music() {
             <span> Spotify</span>
           </a>
           <a className="playBtn" href="https://music.apple.com/se/album/camina/471586220?l=en" rel="noreferrer" target="_blank">
-          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Tidal Logo" />
+          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Apple Music Logo" />
             <span> Apple Music</span>
           </a>
           <a className="playBtn" href="https://tidal.com/browse/album/88307356" rel="noreferrer" target="_blank">
@@ -81,7 +81,7 @@ export default function Music() {
           </div>
         </div>
         <div className="album">
-          <img className="albumCover" src="/assets/cover_faela_faela.jpg" alt="Faela Por El Mundo Album Cover" />
+          <img className="albumCover" src="/assets/cover_faela_faela.jpg" alt="Faela Faela Album Cover" />
           <p className="p2Album">Faela (2011)</p>
           <p>Play on</p>
           <div className="playBtnContainer">
@@ -90,7 +90,7 @@ export default function Music() {
             <span> Spotify</span>
           </a>
           <a className="playBtn" href="https://music.apple.com/se/album/faela/451016033?l=en" rel="noreferrer" target="_blank">
-          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Tidal Logo" />
+          <img className="logoSmall" src="/assets/apple_music_logo.png" alt="Apple Music Logo" />
             <span> Apple Music</span>
           </a>
           <a className="playBtn" href="https://tidal.com/browse/album/88307345" rel="noreferrer" target="_blank">

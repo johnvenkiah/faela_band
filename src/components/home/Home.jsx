@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src={process.env.PUBLIC_URL+"/assets/cover_faela_lab.jpg"} alt="CD-cover for album Latin Animal Beats" />
+          <img src="/assets/cover_faela_lab.jpg" alt="CD-cover for album Latin Animal Beats" />
         </div>
       </div>
       <div className="right">
