@@ -2,6 +2,14 @@ import "./videos.scss"
 
 export default function Videos() {
   return (
-    <div className="videos" id="videos">Videos</div>
+    <div className="videos" id="videos">
+      <h1>Videos</h1>
+      <div className="videoContainer">
+      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=642" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=642" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=642" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=642" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   )
 }

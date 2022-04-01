@@ -1,3 +1,22 @@
+@import "../../global.scss";
+
 .videos {
     background-color: rgb(109, 50, 205);
+
+    h1 {
+        text-align: center;
+    }
+
+    .videoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        iframe {
+            width: 480px;
+            height: 270px;
+            padding: 20px;
+        }
+    }
 }

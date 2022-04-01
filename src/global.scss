@@ -1,3 +1,9 @@
 $mainDarkColor: #2C0926;
 $mainLightColor: antiquewhite;
 $mainOrange: #F09700;
+
+h1 {
+    font-size: 50px;
+    text-shadow: #000 0 0 8px;
+    color: $mainOrange;
+}
