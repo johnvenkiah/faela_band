@@ -1,26 +1,26 @@
-import MusicList from "../musicList/MusicList";
+// import MusicList from "../musicList/MusicList";
 import "./music.scss";
 
 export default function Music() {
 
-  const list = [
-    {
-      id: "por_el_mundo",
-      title: "Por El Mundo (2016)",
-    },
-    {
-      id: "conmigo",
-      title: "Conmigo (2013)",
-    },
-    {
-      id: "camina",
-      title: "Camina (2011)",
-    },
-    {
-      id: "faela_faela",
-      title: "Faela (2011)",
-    },
-  ];
+  // const list = [
+  //   {
+  //     id: "por_el_mundo",
+  //     title: "Por El Mundo (2016)",
+  //   },
+  //   {
+  //     id: "conmigo",
+  //     title: "Conmigo (2013)",
+  //   },
+  //   {
+  //     id: "camina",
+  //     title: "Camina (2011)",
+  //   },
+  //   {
+  //     id: "faela_faela",
+  //     title: "Faela (2011)",
+  //   },
+  // ];
 
   return (
     <div className="music" id="music">
