@@ -11,6 +11,7 @@
     
     h1 {
         font-size: 50px;
+        text-shadow: #000 0 0 8px;
         color: $mainOrange;
         margin: 20px auto;
     }
@@ -52,8 +53,10 @@
             position: relative;
             transition: all .3s ease-in-out;
             box-shadow: #00000080 0 0 10px;
+            text-shadow: #000 0 0 4px;
 
             .p2Album {
+                padding: 0 3px;
                 top: 6px;
                 font-weight: bold;
             }
@@ -77,13 +80,15 @@
                 color: $mainOrange;
                 width: 31%;
                 font-size: 20px;
+                text-shadow: #00000080 0 0 3px;
                 padding: 8px 4px;
                 margin: 10px;
                 text-align: center;
                 border-radius: 7px;
-                background-color: $mainDarkColor;
+                background-color: #2c0926b3;
                 opacity: 0;
                 transition: all .3s ease-in-out;
+                box-shadow: #000 0 0 5px;
 
                 .logoSmall {
                     width: 20px;
@@ -108,7 +113,7 @@
                 }
 
                 &:hover {
-                    background-color: $mainOrange;
+                    background-color: #f09700d3;
                     color: $mainDarkColor;
 
                 }
