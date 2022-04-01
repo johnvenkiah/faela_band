@@ -6,8 +6,8 @@ export default function Topnav({ openMenu, setOpenMenu }) {
         <div className="wrapper">
             <div className="left">
                 <a href="#home" className="mainLogo">
-                  <img src={process.env.PUBLIC_URL + "/assets/faela_logo_white.png"} alt="Faela Logo" className="logoImg" />
-                  <img src={process.env.PUBLIC_URL + "/assets/faela_logo_white.png"} alt="Faela Logo" className="logoImgInner" />
+                  <img src={process.env.PUBLIC_URL + "./assets/faela_logo_white.png"} alt="Faela Logo" className="logoImg" />
+                  <img src={process.env.PUBLIC_URL + "./assets/faela_logo_white.png"} alt="Faela Logo" className="logoImgInner" />
                 </a>
                 <div className="menuItem">
                   <i className="menuIcon fa-solid fa-headphones"></i>
