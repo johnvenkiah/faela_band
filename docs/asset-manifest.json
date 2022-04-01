@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/faela_band/static/css/main.1ca4a7ea.css",
+    "main.js": "/faela_band/static/js/main.ec6aa405.js",
+    "static/media/faela_audience.jpg": "/faela_band/static/media/faela_audience.5f66a2c0004e0ed80d2e.jpg",
+    "static/media/faela_live_1.jpg": "/faela_band/static/media/faela_live_1.186767acdfb17ce8ae37.jpg",
+    "index.html": "/faela_band/index.html",
+    "main.1ca4a7ea.css.map": "/faela_band/static/css/main.1ca4a7ea.css.map",
+    "main.ec6aa405.js.map": "/faela_band/static/js/main.ec6aa405.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ca4a7ea.css",
+    "static/js/main.ec6aa405.js"
+  ]
+}
