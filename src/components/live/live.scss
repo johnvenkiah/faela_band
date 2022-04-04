@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.about {
+.live {
     background: linear-gradient(45deg, $mainDarkColor 25%, #00000080 25%, #00000080 75%, $mainOrange 75%),
     url('../../../public/assets/faela_live_bw.jpg');
     background-attachment: fixed;
@@ -12,12 +12,17 @@
     }
     
     .mainContainer {
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
-
-        .textContainer {
-            flex: .5;
+        flex-wrap: wrap;
+        
+        h2 {
+            margin: 0 0 20px 0;
+            color: $mainOrange;
+        }
+        
+        .gigContainer {
+            width: 100%;
+            justify-content: flex-start;
+            font-size: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -25,18 +30,9 @@
             text-shadow: #000 0 0 5px;
             letter-spacing: .6px;
             text-align: justify;
-
-            .aboutText {
-                margin: 20px 20px 20px 0;
-
-                .singleLine {
-                    display: block;
-                }
-            }
-
-            h3 {
-                margin: 0 0 20px 0;
-                color: $mainOrange;
+            
+            .location {
+                margin: 10px auto;
             }
         }
     }
