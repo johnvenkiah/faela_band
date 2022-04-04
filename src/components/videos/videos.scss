@@ -1,7 +1,13 @@
 @import "../../global.scss";
 
 .videos {
-    background-color: rgb(109, 50, 205);
+    background: linear-gradient(45deg, $mainOrange 25%, #00000080 25%, #00000080 75%, $mainDarkColor 75%),
+    url('../../../public/assets/faela_live_bw.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
         text-align: center;
