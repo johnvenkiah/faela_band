@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import moment from "moment";
 import { GOOGLE_API_KEY, CALENDAR_ID } from "../../config.js";
+import momentDurationFormatSetup from 'moment-duration-format';
+momentDurationFormatSetup(moment);
 
 export default class Calendar extends Component {
   constructor(props) {
@@ -34,7 +36,7 @@ export default class Calendar extends Component {
         .then(function() {
           return gapi.client.request({
             path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?maxResults=11&orderBy=updated&timeMin=${moment().toISOString()}&timeMax=${moment()
-            .duration(1, 'years')
+            .endOf("year")
               .toISOString()}`
           });
         })
