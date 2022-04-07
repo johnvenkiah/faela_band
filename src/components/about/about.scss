@@ -29,6 +29,10 @@
             .aboutText {
                 margin: 20px 20px 20px 0;
 
+                .leftCol, .rightCol {
+                    display: inline-block;
+                }
+
                 .singleLine {
                     display: block;
                 }

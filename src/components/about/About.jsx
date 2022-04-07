@@ -24,15 +24,25 @@ export default function About() {
             America. The ever growing fan base show that Faela truly is irresistible!
           </p>
 
-          <p className="aboutText">
+          <div className="aboutText">
             <h3>Members:</h3>
-            <span className="singleLine">Hugo Coronel - Vocals/Guitar/Trombone/Drums</span>
-            <span className="singleLine">Cristoffer Csanady - Vocals/Bass</span>
-            <span className="singleLine">Göran Abelli - Trombone</span>
-            <span className="singleLine">Rasmus Nyvall - Saxophone</span>
-            <span className="singleLine">Gabriel Hermansson - Electric Guitar</span>
-            <span className="singleLine">John Venkiah - Keys (on occasion)</span>
-          </p>
+            <div className="leftCol">
+              <p className="singleLine">Hugo Coronel</p>
+              <p className="singleLine">Cristoffer Csanady</p>
+              <p className="singleLine">Göran Abelli</p>
+              <p className="singleLine">Rasmus Nyvall</p>
+              <p className="singleLine">Gabriel Hermansson</p>
+              <p className="singleLine">John Venkiah</p>
+            </div>
+            <div className="rightCol">
+              <p className="singleLine">- Vocals/Guitar/Trombone/Drums</p>
+              <p className="singleLine">- Vocals/Bass</p>
+              <p className="singleLine">- Trombone</p>
+              <p className="singleLine">- Saxophone</p>
+              <p className="singleLine">- Electric Guitar</p>
+              <p className="singleLine">- Keys</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
