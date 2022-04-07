@@ -1,5 +1,6 @@
 
 import './live.scss';
+import Calendar from '../calendar/Calendar';
 
 export default function Live() {
   return (
@@ -8,7 +9,8 @@ export default function Live() {
       <div className="mainContainer">
         <h2>Catch Faela live:</h2>
         <div className="gigContainer">
-          <p className="location"><span className="timeDate">May 20th, 2022, 20:00 - </span>
+          <Calendar/>
+          {/* <p className="location"><span className="timeDate">May 20th, 2022, 20:00 - </span>
             Moriska Paviljongen, Malmö SE
           </p>
           <p className="location"><span className="timeDate">May 20th, 2022, 20:00 - </span>
@@ -37,7 +39,7 @@ export default function Live() {
           </p>
           <p className="location"><span className="timeDate">May 20th, 2022, 20:00 - </span>
             Moriska Paviljongen, Malmö SE
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
