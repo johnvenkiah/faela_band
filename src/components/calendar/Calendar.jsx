@@ -1,7 +1,10 @@
+/* global gapi */
+
 import React, { Component } from "react";
 import moment from "moment";
 import { GOOGLE_API_KEY, CALENDAR_ID } from "../../config.js";
 import momentDurationFormatSetup from 'moment-duration-format';
+import "./calendar.scss";
 momentDurationFormatSetup(moment);
 
 export default class Calendar extends Component {
@@ -10,7 +13,7 @@ export default class Calendar extends Component {
     this.state = {
       time: moment().format("dd, Do MMMM, h:mm A"),
       events: [],
-      isBusy: false,
+    //   isBusy: false,
       isEmpty: false,
       isLoading: true
     };
@@ -62,7 +65,7 @@ export default class Calendar extends Component {
               );
             } else {
               that.setState({
-                isBusy: false,
+                // isBusy: false,
                 isEmpty: true,
                 isLoading: false
               });
@@ -117,14 +120,12 @@ export default class Calendar extends Component {
           target="_blank" rel="noreferrer"
           key={event.id}
         >
-          {event.summary}{" "}
+            <span className="badge">
+            {moment(event.start.dateTime).format("MMMM Do")}{" "}
+          </span>
+          {event.location}{" "}
           <span className="badge">
-            {moment(event.start.dateTime).format("h:mm a")},{" "}
-            {moment(event.end.dateTime).diff(
-              moment(event.start.dateTime),
-              "minutes"
-            )}{" "}
-            minutes, {moment(event.start.dateTime).format("MMMM Do")}{" "}
+            {moment(event.start.dateTime).format("h:mm a")}
           </span>
         </a>
       );
@@ -147,28 +148,20 @@ export default class Calendar extends Component {
 
     return (
       <div className="container">
-        <div
+        {/* <div
           className={
             this.state.isBusy ? "current-status busy" : "current-status open"
           }
         >
           <h1>{this.state.isBusy ? "BUSY" : "OPEN"}</h1>
-        </div>
-        <div className="upcoming-meetings">
+        </div> */}
+        <div className="concerts">
           <div className="current-time">{time}</div>
-          <h1>Upcoming Meetings</h1>
           <div className="list-group">
             {this.state.isLoading && loadingState}
             {events.length > 0 && eventsList}
             {this.state.isEmpty && emptyState}
           </div>
-          <a
-            className="primary-cta"
-            href="https://calendar.google.com/calendar?cid=c3FtMnVkaTFhZGY2ZHM3Z2o5aDgxdHVldDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-            target="_blank" rel="noreferrer"
-          >
-            +
-          </a>
         </div>
       </div>
     );
