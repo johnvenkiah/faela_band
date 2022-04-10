@@ -12,16 +12,16 @@
     }
     
     .mainContainer {
-        
+        text-align: center;
         h2 {
-            margin: 0 0 20px 0;
+            margin: 20px auto;
             color: $mainOrange;
         }
         
         .gigContainer {
             flex-wrap: wrap;
             justify-content: center;
-            flex: .5;
+            // flex: .5;
             font-size: 20px;
             display: flex;
             // flex-direction: column;

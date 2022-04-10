@@ -39,7 +39,7 @@ export default class Calendar extends Component {
         .then(function() {
           return gapi.client.request({
             path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?maxResults=11&orderBy=updated&timeMin=${moment().toISOString()}&timeMax=${moment()
-            .endOf("year")
+            .add(1, 'y')
               .toISOString()}`
           });
         })
@@ -121,9 +121,9 @@ export default class Calendar extends Component {
           key={event.id}
         >
             <span className="badge">
-            {moment(event.start.dateTime).format("MMMM Do")}{" "}
+            {moment(event.start.dateTime).format("D/M-Y")}{" - "}
           </span>
-          {event.location}{" "}
+          {event.location}{" - "}
           <span className="badge">
             {moment(event.start.dateTime).format("H:mm")}
           </span>
@@ -134,15 +134,14 @@ export default class Calendar extends Component {
     let emptyState = (
       <div className="empty">
         <h3>
-          No meetings are scheduled for the day. Create one by clicking the
-          button below.
+          No gigs currently in our calendar. We are updating it continuously.
         </h3>
       </div>
     );
 
     let loadingState = (
       <div className="loading">
-          <h4>Loading...</h4>
+          <h4>Loading dates...</h4>
       </div>
     );
 
@@ -156,7 +155,6 @@ export default class Calendar extends Component {
           <h1>{this.state.isBusy ? "BUSY" : "OPEN"}</h1>
         </div> */}
         <div className="concerts">
-          <div className="current-time">{time}</div>
           <div className="list-group">
             {this.state.isLoading && loadingState}
             {events.length > 0 && eventsList}

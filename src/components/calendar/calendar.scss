@@ -1,8 +1,10 @@
+@import "../../global.scss";
+
 .concerts {
 
     .list-group-item {
         display: block;
-        color: orange;
+        color: $mainLightColor;
         text-decoration: none;
     }
 }
