@@ -48,8 +48,8 @@ export default class Calendar extends Component {
             let events = response.result.items;
             let sortedEvents = events.sort(function(a, b) {
               return (
-                moment(b.start.dateTime).format("YYYYMMDD") -
-                moment(a.start.dateTime).format("YYYYMMDD")
+                moment(a.start.dateTime).format("YYYYMMDD") -
+                moment(b.start.dateTime).format("YYYYMMDD")
               );
             });
             if (events.length > 0) {
@@ -116,7 +116,7 @@ export default class Calendar extends Component {
       return (
         <a
           className="list-group-item"
-          href={event.htmlLink}
+          href={'https://' + event.description}
           target="_blank" rel="noreferrer"
           key={event.id}
         >
@@ -125,7 +125,7 @@ export default class Calendar extends Component {
           </span>
           {event.location}{" "}
           <span className="badge">
-            {moment(event.start.dateTime).format("h:mm a")}
+            {moment(event.start.dateTime).format("H:mm")}
           </span>
         </a>
       );
