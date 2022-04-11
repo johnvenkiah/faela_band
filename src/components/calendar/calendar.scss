@@ -2,10 +2,24 @@
 
 .concerts {
 
-    .list-group-item {
-        display: block;
-        margin: 8px auto 0;
-        color: $mainLightColor;
-        text-decoration: none;
+    .list-group {
+        padding: 10px;
+
+        .list-group-item {
+            display: block;
+            padding: 7px;
+            color: $mainLightColor;
+            text-decoration: none;
+            transition: all .3s ease;
+            font-size: 22px;
+            
+        }
+        
+        a {
+            &:hover {
+                color: $mainOrange;
+                text-shadow: black 0 0 10px 5px;
+            }
+        }
     }
 }
