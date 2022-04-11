@@ -116,7 +116,7 @@ export default class Calendar extends Component {
       return (
         <a
           className="list-group-item"
-          href={'https://' + event.description}
+          href={event.description}
           target="_blank" rel="noreferrer"
           key={event.id}
         >
