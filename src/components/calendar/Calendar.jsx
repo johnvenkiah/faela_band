@@ -38,7 +38,7 @@ export default class Calendar extends Component {
         })
         .then(function() {
           return gapi.client.request({
-            path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?maxResults=11&orderBy=updated&timeMin=${moment().toISOString()}&timeMax=${moment()
+            path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?orderBy=updated&timeMin=${moment().toISOString()}&timeMax=${moment()
             .add(1, 'y')
               .toISOString()}`
           });
@@ -110,7 +110,7 @@ export default class Calendar extends Component {
   };
 
   render() {
-    const { time, events } = this.state;
+    const { events } = this.state;
 
     let eventsList = events.map(function(event) {
       return (
@@ -120,12 +120,11 @@ export default class Calendar extends Component {
           target="_blank" rel="noreferrer"
           key={event.id}
         >
-            <span className="badge">
+            <span className="date">
             {moment(event.start.dateTime).format("D/M-Y")}{" - "}
           </span>
-          {event.location}{" - "}
-          <span className="badge">
-            {moment(event.start.dateTime).format("H:mm")}
+          <span className="location">
+          {event.location}
           </span>
         </a>
       );

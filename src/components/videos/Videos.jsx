@@ -5,10 +5,10 @@ export default function Videos() {
     <div className="videos" id="videos">
       <h1>Videos</h1>
       <div className="videoContainer">
-      <iframe src="https://www.youtube.com/embed/zOrhSgxerjs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/t7GJXdiU2KI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/aTp9XAqkFS0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=642" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zOrhSgxerjs" title="YouTube video - Faela Perro Fiel" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/t7GJXdiU2KI" title="YouTube video - Faela Samuelito" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/aTp9XAqkFS0" title="YouTube video - Faela Efige Efige" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=633" title="YouTube video - live gig from Hildesheim" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
   )
