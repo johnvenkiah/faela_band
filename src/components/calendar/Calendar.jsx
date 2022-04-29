@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react';
 import moment from 'moment';
-import { GOOGLE_API_KEY, CALENDAR_ID } from '../../config.js';
 import momentDurationFormatSetup from 'moment-duration-format';
 import './calendar.scss';
 momentDurationFormatSetup(moment);
@@ -30,11 +29,11 @@ export default class Calendar extends Component {
     function start() {
       gapi.client
         .init({
-          apiKey: GOOGLE_API_KEY,
+          apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
         })
         .then(function () {
           return gapi.client.request({
-            path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?singleEvents=True&orderBy=startTime&timeMin=${moment().toISOString()}&timeMax=${moment()
+            path: `https://www.googleapis.com/calendar/v3/calendars/${process.env.REACT_APP_CALENDAR_ID}/events?singleEvents=True&orderBy=startTime&timeMin=${moment().toISOString()}&timeMax=${moment()
               .add(1, 'y')
               .toISOString()}`,
           });
