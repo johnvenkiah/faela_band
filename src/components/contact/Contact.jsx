@@ -12,11 +12,11 @@ export default function Contact() {
           </p>
         </div>
         <form action="">
-          <label htmlFor="title">Title</label>
-          <input type="text" id="title" />
-          <label htmlFor="title">Email Address</label>
+          <label htmlFor="subject">Subject</label>
+          <input type="text" id="subject" />
+          <label htmlFor="email">Email Address</label>
           <input type="email" id="email" />
-          <label htmlFor="title">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="7"></textarea>
           <input type="submit" value="Send" />
         </form>
