@@ -44,25 +44,30 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            padding: 10px;
             
             input, textarea {
                 color: $mainLightColor;
+                padding: 0 10px;
                 text-shadow: #000 0 0 5px;
                 letter-spacing: .6px;
                 background-color: rgba(0, 0, 0, 0.3);
                 line-height: 30px;
-                border-radius: 5px;
-                border-bottom: 2px solid #f0970080;
-                border-right: 2px solid #f0970080;
-                border-top: 2px solid #000;;
-                border-left: 2px solid #000;
-                box-shadow: #000 0 0 5px;
+                border-radius: 9px;
+                border: 1px solid transparent;
+                // border-bottom: 2px solid #f0970080;
+                // border-right: 2px solid #f0970080;
+                // border-top: 2px solid #000;;
+                // border-left: 2px solid #000;
+                box-shadow: #000 inset 0 0 5px;
+                transition: all .3s ease;
                 
                 &:focus {
-                    border: 2px solid $mainOrange;
+                    border: 1px solid $mainOrange;
                 }
                 &:focus-visible {
                     outline: none;
+                    box-shadow: #000 0 0 10px;
                 }
             }
 
