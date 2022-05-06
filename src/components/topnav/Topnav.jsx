@@ -10,12 +10,16 @@ export default function Topnav({ openMenu, setOpenMenu }) {
                   <img src={process.env.PUBLIC_URL + "/assets/faela_logo_white.png"} alt="Faela Logo" className="logoImgInner" />
                 </a>
                 <div className="menuItem">
-                  <i className="menuIcon fa-solid fa-headphones"></i>
-                  <span>Listen</span>
+                  <a href="#music" className="navLink">
+                    <i className="menuIcon fa-solid fa-headphones"></i>
+                    <span>Listen</span>
+                  </a>
                 </div>
                 <div className="menuItem">
-                  <i className="menuIcon fa-solid fa-champagne-glasses"></i>
-                  <span>Book Us</span>
+                  <a href="#contact" className="navLink">
+                    <i className="menuIcon fa-solid fa-champagne-glasses"></i>
+                    <span>Book Us</span>
+                  </a>
                 </div>
             </div>
             <div className="right">
