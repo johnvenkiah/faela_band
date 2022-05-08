@@ -10,6 +10,11 @@
     display: flex;
     background-attachment: fixed;
 
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1 {
         font-size: 25px;
     }
@@ -18,7 +23,7 @@
         flex: .5;
         overflow: hidden;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
 
         .imgContainer {
             width: 600px;
@@ -28,15 +33,26 @@
             justify-content: center;
             float: right;
 
+            @include mobile {
+                height: 100%;
+                // margin-top: 30px;
+                // align-items: start;
+            }
+
             img {
                 height: 60%;
                 box-shadow: #000 0px 0px 20px 5px;
+
+                @include mobile {
+                    height: 80%;
+                }
             }
         }
     }
 
     .right {
         flex: .5;
+        position: relative;
 
         .homeRightContainer {
             width: 100%;
@@ -50,14 +66,29 @@
             font-family: 'Secular One', sans-serif;
             text-shadow: black 0 0 12px;
 
+            @include mobile {
+                justify-content: space-evenly;
+                overflow-x: hidden;
+            }
+
             h2 {
-                font-size: 50px;
+                font-size: 45px;
                 margin: 20px auto;
+
+                @include mobile {
+                    font-size: 30px;
+                    margin: 0 auto;
+                }
             }
             h3 {
                 margin-top: 40%;
                 margin-bottom: 20%;
-                font-size: 50px;
+                font-size: 45px;
+
+                @include mobile {
+                    margin: 0 auto;
+                    font-size: 30px;
+                }
             }
             
             h4 {
@@ -76,6 +107,11 @@
                 color: $mainLightColor;
                 transition: all .5s ease;
                 text-shadow: #000 0 0 8px;
+
+                @include mobile {
+                    font-size: 18px;
+                    width: 80%;
+                }
                 
                 p {
                     padding: 5px;
@@ -87,6 +123,11 @@
                     color: $mainLightColor;
                     animation: flash 2s infinite;
                     padding: 5px;
+
+                    @include mobile {
+                        font-size: 20px;
+                    }
+                    
                 }
                 &:hover {
                     transform: scale(1.01);

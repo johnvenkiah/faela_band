@@ -2,6 +2,14 @@ $mainDarkColor: #2C0926;
 $mainLightColor: antiquewhite;
 $mainOrange: #F09700;
 
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}
+
 h1 {
     font-size: 50px;
 }
@@ -9,4 +17,5 @@ h1 {
 h1, h2, h3, h4 {
     text-shadow: #000 0 0 8px;
     color: $mainOrange;
+    overflow-x: visible;
 }
