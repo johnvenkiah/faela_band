@@ -14,16 +14,25 @@
     justify-content: center;
     transition: all .5s ease;
 
+    @include mobile {
+        top: 35px;
+        width: 100%;
+        right: -100%;
+    }
+
     &.active {
         right: 0pt;
-        background-color: $mainOrange;
+        background: linear-gradient($mainOrange, #f09700c9);
+        backdrop-filter: blur(3px);
     }
 
     ul {
         margin: 0;
         padding: 0;
         width: 60%;
-        font-size: 35px;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
         color: $mainDarkColor;
 
         li {
@@ -38,7 +47,8 @@
             }
 
             &:hover {
-                font-size: 37px;
+                transform: scale(1.1);
+                padding-left: 2px;
             }
         }
     }
