@@ -33,21 +33,21 @@ export default function About() {
             <div className="aboutText">
               <h3>Members:</h3>
               <div className="leftCol">
-                <p className="singleLine">Hugo Coronel</p>
-                <p className="singleLine">Cristoffer Csanady</p>
-                <p className="singleLine">Göran Abelli</p>
-                <p className="singleLine">Rasmus Nyvall</p>
-                <p className="singleLine">Gabriel Hermansson</p>
-                <p className="singleLine">John Venkiah</p>
+                <p className="singleLine"><strong>Hugo Coronel</strong> - Vocals/Guitar/Trombone/Drums</p>
+                <p className="singleLine"><strong>Cristoffer Csanady</strong> - Vocals/Bass</p>
+                <p className="singleLine"><strong>Göran Abelli</strong> - Trombone</p>
+                <p className="singleLine"><strong>Rasmus Nyvall</strong> - Saxophone</p>
+                <p className="singleLine"><strong>Gabriel Hermansson</strong> - Electric Guitar</p>
+                <p className="singleLine"><strong>John Venkiah</strong> - Keys</p>
               </div>
-              <div className="rightCol">
+              {/* <div className="rightCol">
                 <p className="singleLine">- Vocals/Guitar/Trombone/Drums</p>
                 <p className="singleLine">- Vocals/Bass</p>
                 <p className="singleLine">- Trombone</p>
                 <p className="singleLine">- Saxophone</p>
                 <p className="singleLine">- Electric Guitar</p>
                 <p className="singleLine">- Keys</p>
-              </div>
+              </div> */}
             </div>
           </section>
         </article>

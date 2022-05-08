@@ -23,6 +23,12 @@
             width: 480px;
             height: 270px;
             padding: 20px;
+
+            @include mobile {
+                width: 240px;
+                height: 135px;
+                align-items: center;
+            }
         }
     }
 }
