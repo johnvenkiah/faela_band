@@ -1,27 +1,23 @@
 import "./menu.scss"
 
 export default function Menu({ openMenu, setOpenMenu }) {
+    const menuItems = {
+        "#home": "Home",
+        "#music": "Music",
+        "#videos": "Videos",
+        "#live": "Live",
+        "#about": "About",
+        "#contact": "Contact",
+    }
+    const menuMarkup = Object.keys(menuItems).map(key =>
+        <li onClick={() => setOpenMenu(false)}>
+        <a href={key}>{menuItems[key]}</a>
+    </li>
+    )
   return (
     <div className={"menu " + (openMenu && "active")}>
         <ul>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#home">Home</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#music">Music</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#videos">Videos</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#live">Live</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#about">About</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#contact">Contact</a>
-            </li>
+            {menuMarkup}
         </ul>
     </div>
   )
