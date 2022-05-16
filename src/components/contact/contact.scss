@@ -46,10 +46,10 @@
                 padding: 0 10px;
                 text-shadow: #000 0 0 5px;
                 letter-spacing: .6px;
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(122, 109, 99, 0.5);
                 line-height: 30px;
                 border-radius: 9px;
-                border: 1px solid transparent;
+                border: 1px solid rgba(220, 132, 0, .3);
                 box-shadow: #000 inset 0 0 5px;
                 transition: all .3s ease;
                 
@@ -64,7 +64,7 @@
 
             textarea {
                 @include mobile {
-                    height: 7x0px;
+                    height: 80px;
                 }
             }
 
@@ -87,7 +87,7 @@
 
                 @include mobile {
                     padding: 0 5%;
-                    margin-top: 10px !important;
+                    margin-top: 15px !important;
                 }
     
                 &:hover {
