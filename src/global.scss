@@ -10,6 +10,17 @@ $width: 768px;
     }
 }
 
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(45deg, $mainOrange 25%, #00000080 25%, #00000080 75%, $mainDarkColor 75%),
+    url('../public/assets/faela_audience.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
 h1 {
     font-size: 50px;
 

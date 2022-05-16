@@ -8,6 +8,7 @@ import Contact from './components/contact/Contact';
 import './app.scss';
 import { useState } from 'react';
 import Menu from './components/menu/Menu';
+// import bgImage from './faela_live_1.jpg';
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Topnav openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="sections">
+        <div className="background"></div>
         <Home />
         <Music />
         <Videos />

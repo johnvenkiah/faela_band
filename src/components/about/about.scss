@@ -1,10 +1,6 @@
 @import "../../global.scss";
 
 .about {
-    background: linear-gradient(45deg, $mainDarkColor 25%, #00000080 25%, #00000080 75%, $mainOrange 75%),
-    url('../../../public/assets/faela_live_bw.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     
     h1 {
         text-align: center;
