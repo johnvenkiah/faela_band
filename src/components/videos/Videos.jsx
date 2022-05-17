@@ -5,7 +5,7 @@ export default function Videos() {
     {
       title: 'Perro Fiel',
       url: 'zOrhSgxerjs',
-      description: 'Faelas new song with footage from Boa Vista, Cap Verde',
+      description: "Faela's new song with footage from Boa Vista, Cap Verde",
     },
     {
       title: 'Samuelito',
@@ -16,7 +16,7 @@ export default function Videos() {
       title: 'Efige Efige',
       url: 'aTp9XAqkFS0',
       description:
-        'Faelas take on a Greek tune by Stelios Kazantzidis from 1980',
+        "Faela's take on a Greek tune by Stelios Kazantzidis from 1980",
     },
     {
       title: 'Live from Hildesheim',
@@ -31,8 +31,9 @@ export default function Videos() {
         {video_urls.map((item) => (
           <>
             <div className="videoWrapper">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <div className="textWrapper">
+                <h3>{item.title}</h3>
+              </div>
               <iframe
                 src={`https://www.youtube.com/embed/${item.url}`}
                 title={`YouTube video - ${item.title}`}
@@ -40,6 +41,9 @@ export default function Videos() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+              <div className="textWrapper">
+                <p>{item.description}</p>
+              </div>
             </div>
           </>
         ))}

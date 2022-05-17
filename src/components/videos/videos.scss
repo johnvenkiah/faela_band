@@ -11,30 +11,45 @@
 
     .videoContainer {
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         
         .videoWrapper {
-            flex: .25;
-            h3 {
-
-            }
-
-            p {
-                color: $mainLightColor;
-            }
-
+            flex: 1 0 46%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1%;
+            
             iframe {
-                width: 100%;
-                height: 100%;
-    
+                aspect-ratio: 16 / 9;
+                width: 65%;
+                border-radius: 8px;
+                box-shadow: black 0 0 10px;
+                
                 @include mobile {
-                    width: 240px;
-                    height: 135px;
-                    align-items: center;
+                    // width: 240px;
+                    // height: 135px;
+                    // align-items: center;
                 }
             }
+
+            .textWrapper {
+                width: 65%;
+                display: flex;
+                align-items: flex-start;
+                text-shadow: black 0 0 7px;
+                p {
+                    color: $mainLightColor;
+                    // height: 50px;
+                }
+            }
+
+            h3 {
+                margin-bottom: 1%;
+                z-index: 1;
+            }
+            
         }
 
     }
