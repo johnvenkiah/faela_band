@@ -1,15 +1,49 @@
-import "./videos.scss"
+import './videos.scss';
 
 export default function Videos() {
+  const video_urls = [
+    {
+      title: 'Perro Fiel',
+      url: 'zOrhSgxerjs',
+      description: 'Faelas new song with footage from Boa Vista, Cap Verde',
+    },
+    {
+      title: 'Samuelito',
+      url: 't7GJXdiU2KI',
+      description: "A tribute to Faela's old friend in Switzerland",
+    },
+    {
+      title: 'Efige Efige',
+      url: 'aTp9XAqkFS0',
+      description:
+        'Faelas take on a Greek tune by Stelios Kazantzidis from 1980',
+    },
+    {
+      title: 'Live from Hildesheim',
+      url: 'Ywgn4aaAXWU?start=633',
+      description: 'A live concert streamed from Germany, 2021',
+    },
+  ];
   return (
     <div className="videos" id="videos">
       <h1>Videos</h1>
       <div className="videoContainer">
-      <iframe src="https://www.youtube.com/embed/zOrhSgxerjs" title="YouTube video - Faela Perro Fiel" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/t7GJXdiU2KI" title="YouTube video - Faela Samuelito" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/aTp9XAqkFS0" title="YouTube video - Faela Efige Efige" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      <iframe src="https://www.youtube.com/embed/Ywgn4aaAXWU?start=633" title="YouTube video - live gig from Hildesheim" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {video_urls.map((item) => (
+          <>
+            <div className="videoWrapper">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <iframe
+                src={`https://www.youtube.com/embed/${item.url}`}
+                title={`YouTube video - ${item.title}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </>
+        ))}
       </div>
     </div>
-  )
+  );
 }
