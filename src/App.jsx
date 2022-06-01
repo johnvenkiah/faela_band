@@ -8,10 +8,10 @@ import Contact from './components/contact/Contact';
 import './app.scss';
 import { useState } from 'react';
 import Menu from './components/menu/Menu';
-// import bgImage from './faela_live_1.jpg';
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [hideElements, setHideElements] = useState(false);
 
   function setDocHeight() {
     document.documentElement.style.setProperty(
@@ -32,7 +32,7 @@ function App() {
       <div className="sections">
         <div className="background"></div>
         <Home />
-        <Music />
+        <Music hideElements={hideElements} setHideElements={setHideElements} />
         <Videos />
         <Live />
         <About />

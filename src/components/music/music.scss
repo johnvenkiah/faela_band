@@ -151,15 +151,11 @@
             }
         }
 
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        
-        // .iframeContainer {
-        //     padding: 10px;
-        //     .iframes {
-        //         border-radius: 10px;
-        //     }
-        // }
+        .hide {
+            @include mobile {
+                width: 0px;
+                height: 0px;
+            }
+        }
     }
 }

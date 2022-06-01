@@ -1,13 +1,17 @@
 import albumData from '../musicList/MusicList';
 import './music.scss';
 
-export default function Music() {
+export default function Music({ hideElements, setHideElements }) {
   return (
     <div className="music" id="music">
       <h1>Music</h1>
       <div className="container">
         {albumData.map((item) => (
-          <div className="album">
+          <div
+            className={'album ' + (hideElements ? hideElements && 'hide' : '')}
+            onMouseOver={() => setHideElements(true)}
+            onMouseLeave={() => setHideElements(false)}
+          >
             <img
               className="albumCover"
               src={process.env.PUBLIC_URL + item.img_url}
