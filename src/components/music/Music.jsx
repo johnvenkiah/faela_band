@@ -6,8 +6,9 @@ export default function Music({ hideElements, setHideElements }) {
     <div className="music" id="music">
       <h1>Music</h1>
       <div className="container">
-        {albumData.map((item) => (
+        {albumData.map((item, i) => (
           <div
+            key={i}
             className={'album' + (hideElements ? hideElements && ' hide' : '')}
             onMouseOver={() => setHideElements(true)}
             onMouseLeave={() => setHideElements(false)}
