@@ -20,17 +20,35 @@
             align-items: center;
             flex-direction: column;
             padding: 1%;
+
+            @include mobile {
+                flex: initial;
+                align-items: start;
+            }
+
+            h3 {
+                margin-bottom: 1%;
+                z-index: 1;
+                align-self: start;
+                margin-left: 18%;
+                overflow: visible;
+
+                @include mobile {
+                    align-self: initial;
+                    margin-left: 2%;
+                    padding: 0 0 0 5px;
+                }
+            }
             
             iframe {
                 aspect-ratio: 16 / 9;
-                width: 65%;
+                width: 100%;
                 border-radius: 8px;
                 box-shadow: black 0 0 10px;
                 
                 @include mobile {
-                    // width: 240px;
-                    // height: 135px;
-                    // align-items: center;
+                    width: 40%;
+                    margin: 0 5px 0 10px;
                 }
             }
 
@@ -38,18 +56,23 @@
                 width: 65%;
                 display: flex;
                 align-items: flex-start;
+                flex-direction: column;
                 text-shadow: black 0 0 7px;
+                overflow: visible;
+
+                @include mobile {
+                    flex-direction: row;
+                    width: 100%;
+                }
                 p {
                     color: $mainLightColor;
-                    // height: 50px;
+
+                    @include mobile {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
                 }
             }
-
-            h3 {
-                margin-bottom: 1%;
-                z-index: 1;
-            }
-            
         }
 
     }
