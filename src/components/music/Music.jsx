@@ -12,18 +12,26 @@ export default function Music() {
     {
       id: 'por_el_mundo',
       title: 'Por El Mundo (2016)',
+      img_url: '/assets/cover_faela_porelmundo.jpg',
+      alt_attr: 'Faela Por El Mundo Album Cover',
     },
     {
       id: 'conmigo',
       title: 'Conmigo (2013)',
+      img_url: '/assets/cover_faela_conmigo.jpg',
+      alt_attr: 'Faela Conmigo Album Cover',
     },
     {
       id: 'camina',
       title: 'Camina (2011)',
+      img_url: '/assets/cover_faela_camina.jpg',
+      alt_attr: 'Faela Camina Album Cover',
     },
     {
       id: 'faela_faela',
       title: 'Faela (2011)',
+      img_url: '/assets/cover_faela_faela.jpg',
+      alt_attr: 'Faela Faela Album Cover',
     },
   ];
 
@@ -64,67 +72,6 @@ export default function Music() {
             deezer_url={item.deezer_url}
           />
         ))}
-        <div />
-        <div className="container">
-          {data.map((d) => (
-            <div
-              className={active ? 'album active' : 'album'}
-              onClick={() => setActive(d.id)}
-            >
-              <img className="albumCover" src={d.img_url} alt={d.alt_attr} />
-              <p className="p2Album">{d.title}</p>
-              <p>Play on</p>
-              <div className="playBtnContainer">
-                <a
-                  className="playBtn"
-                  href={d.spotify_url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-spotify"></i>
-                  <span> Spotify</span>
-                </a>
-                <a
-                  className="playBtn"
-                  href={d.apple_url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    className="logoSmall"
-                    src={
-                      process.env.PUBLIC_URL + '/assets/apple_music_logo.png'
-                    }
-                    alt="Apple Logo"
-                  />
-                  <span> Apple Music</span>
-                </a>
-                <a
-                  className="playBtn"
-                  href={d.tidal_url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    className="logoSmall"
-                    src={process.env.PUBLIC_URL + '/assets/tidal_logo.png'}
-                    alt="Tidal Logo"
-                  />
-                  <span> Tidal</span>
-                </a>
-                <a
-                  className="playBtn"
-                  href={d.deezer_url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-deezer"></i>
-                  <span> Deezer</span>
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
