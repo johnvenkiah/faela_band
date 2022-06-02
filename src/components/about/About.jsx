@@ -5,6 +5,20 @@ export default function About() {
     <div className="about" id="about">
       <h1>About</h1>
       <div className="mainContainer">
+        <div className="imageContainer">
+          <div className="img">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/faela_live_bw.jpg'}
+              alt=""
+            />
+          </div>
+          <div className="img">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/faela_live_1.jpg'}
+              alt=""
+            />
+          </div>
+        </div>
         <article className="textContainer">
           <section>
             <p className="aboutText">
@@ -33,21 +47,25 @@ export default function About() {
             <div className="aboutText">
               <h3>Members:</h3>
               <div className="leftCol">
-                <p className="singleLine"><strong>Hugo Coronel</strong> - Vocals/Guitar/Trombone/Drums</p>
-                <p className="singleLine"><strong>Cristoffer Csanady</strong> - Vocals/Bass</p>
-                <p className="singleLine"><strong>Göran Abelli</strong> - Trombone</p>
-                <p className="singleLine"><strong>Rasmus Nyvall</strong> - Saxophone</p>
-                <p className="singleLine"><strong>Gabriel Hermansson</strong> - Electric Guitar</p>
-                <p className="singleLine"><strong>John Venkiah</strong> - Keys</p>
+                <p className="singleLine">
+                  <strong>Hugo Coronel</strong> - Vocals/Guitar/Trombone/Drums
+                </p>
+                <p className="singleLine">
+                  <strong>Cristoffer Csanady</strong> - Vocals/Bass
+                </p>
+                <p className="singleLine">
+                  <strong>Göran Abelli</strong> - Trombone
+                </p>
+                <p className="singleLine">
+                  <strong>Rasmus Nyvall</strong> - Saxophone
+                </p>
+                <p className="singleLine">
+                  <strong>Gabriel Hermansson</strong> - Electric Guitar
+                </p>
+                <p className="singleLine">
+                  <strong>John Venkiah</strong> - Keys
+                </p>
               </div>
-              {/* <div className="rightCol">
-                <p className="singleLine">- Vocals/Guitar/Trombone/Drums</p>
-                <p className="singleLine">- Vocals/Bass</p>
-                <p className="singleLine">- Trombone</p>
-                <p className="singleLine">- Saxophone</p>
-                <p className="singleLine">- Electric Guitar</p>
-                <p className="singleLine">- Keys</p>
-              </div> */}
             </div>
           </section>
         </article>
