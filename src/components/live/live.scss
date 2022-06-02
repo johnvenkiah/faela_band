@@ -12,15 +12,14 @@
         h2 {
             margin: 20px auto;
             color: $mainOrange;
+            font-size: 17px;
         }
         
         .gigContainer {
             flex-wrap: wrap;
             justify-content: center;
-            // flex: .5;
-            font-size: 20px;
+            font-size: 17px;
             display: flex;
-            // flex-direction: column;
             justify-content: center;
             color: $mainLightColor;
             text-shadow: #000 0 0 5px;
