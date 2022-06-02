@@ -57,10 +57,10 @@
             @include mobile {
                 height: 100px;
                 width: 100px;
-                &:hover {
-                    height: 280px;
-                    width: 280px;
-                }
+                // &:hover {
+                //     height: 280px;
+                //     width: 280px;
+                // }
             }
 
             .p2Album {
@@ -139,10 +139,10 @@
             &:hover {
                 background-color: #000;
 
-                .albumCover {
-                    opacity: .4;
-                    z-index: 0;
-                }
+                // .albumCover {
+                //     opacity: .4;
+                //     z-index: 0;
+                // }
 
                 .playBtn {
                     opacity: 1;

@@ -1,4 +1,4 @@
-const albumData = [
+export const porElMundo = [
   {
     id: 'por_el_mundo',
     img_url: '/assets/cover_faela_porelmundo.jpg',
@@ -10,6 +10,9 @@ const albumData = [
     tidal_url: 'https://tidal.com/browse/album/88309927',
     deezer_url: 'https://deezer.page.link/D2KWRqPyVXERbSdD9',
   },
+];
+
+export const conMigo = [
   {
     id: 'conmigo',
     img_url: '/assets/cover_faela_conmigo.jpg',
@@ -21,6 +24,9 @@ const albumData = [
     tidal_url: 'https://tidal.com/browse/album/88307663',
     deezer_url: 'https://deezer.page.link/yMYJffju3vanGa5ZA',
   },
+];
+
+export const camina = [
   {
     id: 'camina',
     img_url: '/assets/cover_faela_camina.jpg',
@@ -32,6 +38,9 @@ const albumData = [
     tidal_url: 'https://tidal.com/browse/album/88307356',
     deezer_url: 'https://deezer.page.link/VK9MbyHyoX5cwRVL8',
   },
+];
+
+export const faela = [
   {
     id: 'faela_faela',
     img_url: '/assets/cover_faela_faela.jpg',
@@ -44,5 +53,3 @@ const albumData = [
     deezer_url: 'https://deezer.page.link/P7YfL3bfw2YoeASb9',
   },
 ];
-
-export default albumData;
