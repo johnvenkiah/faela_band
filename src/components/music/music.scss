@@ -50,6 +50,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            opacity: 1;
             transition: all .3s ease-in-out;
             box-shadow: #00000080 0 0 10px;
             text-shadow: #000 0 0 4px;
@@ -153,6 +154,9 @@
 
         .hide {
             @include mobile {
+                transition: opacity .1s ease;
+                padding: 0;
+                margin: 0;
                 width: 0px;
                 height: 0px;
             }
