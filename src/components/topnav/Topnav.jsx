@@ -31,46 +31,6 @@ export default function Topnav({ openMenu, setOpenMenu }) {
           </div>
         </div>
         <div className="right">
-          <div className="smIconWrapper">
-            <a
-              href="https://www.facebook.com/faelaband"
-              target="_blank"
-              rel="noreferrer"
-              className="navLink"
-            >
-              <i className="menuIcon fa-brands fa-facebook"></i>
-            </a>
-          </div>
-          <div className="smIconWrapper">
-            <a
-              href="https://www.instagram.com/faelaband/"
-              target="_blank"
-              rel="noreferrer"
-              className="navLink"
-            >
-              <i className="menuIcon fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          <div className="smIconWrapper">
-            <a
-              href="https://open.spotify.com/artist/3C8mjeTAUNwr1PY9BkKyRc?si=nsEpZvkdQz-q2UOTATXAlQ"
-              className="navLink"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="menuIcon fa-brands fa-spotify"></i>
-            </a>
-          </div>
-          <div className="smIconWrapper">
-            <a
-              href="https://www.youtube.com/channel/UCs-Bc_VtGlnQJLEahko6YdQ"
-              target="_blank"
-              rel="noreferrer"
-              className="navLink"
-            >
-              <i className="menuIcon fa-brands fa-youtube"></i>
-            </a>
-          </div>
           <div className="hamburger" onClick={() => setOpenMenu(!openMenu)}>
             <span className="line-1"></span>
             <span className="line-2"></span>

@@ -92,33 +92,7 @@
             display: flex;
             align-items: center;
             flex: .5;
-            justify-content: space-between;
-
-            @include mobile {
-                justify-content: flex-end;
-            }
-
-            .smIconWrapper {
-                display: flex;
-                align-items: center;
-                margin: 0 0 0 25px;
-
-                a {
-                    color: $mainOrange;
-                    transition: all .3s ease-in-out;
-                    
-                    &:hover {
-                        color: $mainLightColor;
-                    }
-
-                    i {
-                        font-size: 1.3em;
-                    }
-                }
-                @include mobile {
-                    display: none;
-                }
-            }
+            justify-content: flex-end;
 
             .hamburger {
                 width: 37.5px;

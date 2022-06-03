@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+.smLinks {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .smIconWrapper {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 25px;
+    
+        a {
+            color: $mainDarkColor;
+            transition: all .3s ease-in-out;
+            
+            &:hover {
+                color: $mainLightColor;
+            }
+    
+            i {
+                font-size: 1.3em;
+            }
+        }
+    }
+}
