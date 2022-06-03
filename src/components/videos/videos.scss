@@ -7,23 +7,33 @@
 
     h1 {
         margin: 20px auto;
+        
+        @include mobile {
+            margin: 10px auto;
+        }
     }
 
     .videoContainer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        flex: 1;
         
         .videoWrapper {
             flex: 1 0 46%;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             padding: 1%;
 
             @include mobile {
                 flex: initial;
                 align-items: start;
+            }
+
+            @include small {
+                max-height: 30%;
             }
 
             h3 {
@@ -47,8 +57,14 @@
                 box-shadow: black 0 0 10px;
                 
                 @include mobile {
+                    aspect-ratio: 16 / 9;
                     width: 40%;
                     margin: 0 5px 0 10px;
+                }
+                
+                @include small {
+                    max-height: 10vh;
+                    width: 35%;
                 }
             }
 

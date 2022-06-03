@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .about {
-    
+
     h1 {
         text-align: center;
         margin: 20px auto;
@@ -11,6 +11,10 @@
         overflow: hidden;
         display: flex;
         justify-content: flex-end;
+
+        @include mobile {
+            padding: 10px;
+        }
 
         .textContainer {
             flex: .6;
@@ -24,6 +28,10 @@
 
             @include mobile {
                 flex: 1;
+            }
+
+            @include largemobile {
+                font-size: .9em;
             }
 
             .aboutText {
@@ -48,6 +56,14 @@
                         // white-space: initial;
                     }
                 }
+            }
+
+            .aboutTextTwo {
+
+                @include largemobile {
+                    display: none;
+                }
+
             }
 
             h3 {

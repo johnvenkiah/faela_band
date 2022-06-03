@@ -2,10 +2,24 @@ $mainDarkColor: #2C0926;
 $mainLightColor: antiquewhite;
 $mainOrange: #F09700;
 
-$width: 768px;
+$smallTabletWidth: 768px;
+$largeMobileWidth: 395px;
+$heightSmall: 600px;
 
 @mixin mobile {
-    @media (max-width: #{$width}) {
+    @media (max-width: #{$smallTabletWidth}) {
+        @content
+    }
+}
+
+@mixin largemobile {
+    @media (max-width: #{$largeMobileWidth}) {
+        @content
+    }
+}
+
+@mixin small {
+    @media (max-height: #{$heightSmall}) {
         @content
     }
 }
