@@ -5,8 +5,11 @@ import Videos from './components/videos/Videos';
 import Live from './components/live/Live';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import NotFound from './components/not_found/NotFound';
+
 import './app.scss';
 import { useState } from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Menu from './components/menu/Menu';
 
 function App() {
@@ -31,12 +34,23 @@ function App() {
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="sections">
         <div className="background"></div>
-        <Home />
-        <Music hideElements={hideElements} setHideElements={setHideElements} />
-        <Videos />
-        <Live />
-        <About />
-        <Contact />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            path="/music"
+            element={
+              <Music
+                hideElements={hideElements}
+                setHideElements={setHideElements}
+              />
+            }
+          />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/live" element={<Live />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
     </div>
   );

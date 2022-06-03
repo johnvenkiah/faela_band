@@ -1,11 +1,15 @@
-import "./home.scss"
+import { Link } from 'react-router-dom';
+import './home.scss';
 
 export default function Home() {
   return (
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src={process.env.PUBLIC_URL + "/assets/cover_faela_lab.jpg"} alt="CD-cover for album Latin Animal Beats" />
+          <img
+            src={process.env.PUBLIC_URL + '/assets/cover_faela_lab.jpg'}
+            alt="CD-cover for album Latin Animal Beats"
+          />
         </div>
       </div>
       <div className="right">
@@ -13,14 +17,12 @@ export default function Home() {
           <h1>Faela's new album</h1>
           <h2>Latin Animal Beats</h2>
           <h3>Out Summer 2022</h3>
-            <a className="btnMain" href="#music">
-            <p>
-                Continue to music
-            </p>
+          <Link to="/music" className="btnMain">
+            <p>Continue to music</p>
             <i className="fa-solid fa-chevron-down"></i>
-            </a>
+          </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }
