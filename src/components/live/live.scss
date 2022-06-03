@@ -18,13 +18,17 @@
         .gigContainer {
             flex-wrap: wrap;
             justify-content: center;
-            font-size: 17px;
+            font-size: 21px;
             display: flex;
             justify-content: center;
             color: $mainLightColor;
             text-shadow: #000 0 0 5px;
             letter-spacing: .6px;
             text-align: justify;
+
+            @include mobile {
+                font-size: 17px;
+            }
             
             .location {
                 margin: 10px auto;
