@@ -6,21 +6,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow-x: visible;
     
     .smIconWrapper {
+        overflow-x: visible;
         display: flex;
         align-items: center;
         margin: 0 0 0 25px;
-    
+        
         a {
+            overflow-x: visible;
             color: $mainDarkColor;
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
             
             &:hover {
                 color: $mainLightColor;
+                transform: scale(1.3);
+                text-shadow: $mainDarkColor 0 0 9px;
             }
-    
+            
             i {
+                overflow-x: visible;
                 font-size: 1.3em;
             }
         }
