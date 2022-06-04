@@ -38,8 +38,9 @@
         flex-wrap: wrap;
         
         @include mobile {
-            flex: .7;
+            flex: .8;
             width: 80%;
+            margin-top: 30px;
         }
 
         @include smallLandcape {
@@ -58,27 +59,25 @@
             opacity: 1;
             box-shadow: #00000080 0 0 10px;
             text-shadow: #000 0 0 4px;
+            transition: .3s all ease;
             
             @include tabletLandscape {
                 height: 220px;
                 width: 220px;
-                transition: none;
+                transition: .3s all ease;
 
                 &:hover {
-                    flex-basis: initial;
-                    height: 80vw;
-                    max-height: 250px;
-                    width: 80vw;
-                    max-width: 250px;
+                    // flex-basis: initial;
+                    height: 250px;
+                    width: 250px;
                 }
             }
 
-            @include mobile {
+            @include largemobile {
                 height: 25vw;
                 width: 25vw;
                 flex-basis: 35%;
                 opacity: 1;
-                transition: none;
 
                 &:hover {
                     flex-basis: initial;
@@ -171,15 +170,15 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
-                transition: all .3s ease-in-out;
             }
-
+            
             &:hover {
                 background-color: #000;
-
+                
                 .albumCover {
                     opacity: .4;
                     z-index: 0;
+                    transition: all .3s ease-in-out;
                 }
 
                 .playBtn {
@@ -191,8 +190,7 @@
 
         .hide {
             @include largemobile {
-                flex-basis: 50%;
-                transition: opacity .3s ease;
+                transition: all .3s ease;
                 padding: 0;
                 margin: 0;
                 height: 0;
