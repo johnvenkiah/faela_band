@@ -5,6 +5,7 @@ $mainOrange: #F09700;
 $smallTabletWidth: 768px;
 $largeMobileWidth: 395px;
 $heightSmall: 600px;
+$heightSmallLandscape: 400px;
 
 @mixin mobile {
     @media (max-width: #{$smallTabletWidth}) {
@@ -20,6 +21,12 @@ $heightSmall: 600px;
 
 @mixin small {
     @media (max-height: #{$heightSmall}) {
+        @content
+    }
+}
+
+@mixin smallLandcape {
+    @media (max-height: #{$heightSmallLandscape}) {
         @content
     }
 }
@@ -41,6 +48,10 @@ h1 {
     @include mobile {
         font-size: 30px;
         text-transform: uppercase;
+    }
+
+    @include smallLandcape {
+        font-size: 25px;
     }
 }
 

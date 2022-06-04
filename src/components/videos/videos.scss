@@ -36,6 +36,10 @@
                 max-height: 30%;
             }
 
+            @include smallLandcape {
+                max-height: initial;
+            }
+
             h3 {
                 margin-bottom: 1%;
                 z-index: 1;

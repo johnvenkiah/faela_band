@@ -42,6 +42,10 @@
             width: 80%;
         }
 
+        @include smallLandcape {
+            width: 100%;
+        }
+
         .album {
             height: 280px;
             width: 280px;
@@ -65,6 +69,17 @@
                     flex-basis: initial;
                     height: 80vw;
                     width: 80vw;
+                }
+            }
+
+            @include smallLandcape {
+                height: 15vw;
+                width: 15vw;
+
+                &:hover {
+                    flex-basis: initial;
+                    height: 37vw;
+                    width: 37vw;
                 }
             }
 
