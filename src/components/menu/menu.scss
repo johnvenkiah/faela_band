@@ -20,6 +20,10 @@
         right: -100%;
     }
 
+    @include smallLandcape {
+        top: 35px;
+    }
+
     &.active {
         right: 0pt;
         background: linear-gradient($mainOrange, #f09700c9);
@@ -41,7 +45,12 @@
         transition: all .2s ease;
         overflow-x: visible;
         list-style: none;
-
+        
+        @include smallLandcape {
+            font-size: 25px;
+            margin: 15px;
+            height: 27px;
+        }
             a {
                 font-size: inherit;
                 color: inherit;
