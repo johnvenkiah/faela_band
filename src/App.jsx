@@ -9,7 +9,7 @@ import NotFound from './components/not_found/NotFound';
 
 import './app.scss';
 import { useState } from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Menu from './components/menu/Menu';
 
 function App() {
