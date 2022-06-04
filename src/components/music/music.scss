@@ -61,7 +61,6 @@
                 width: 25vw;
                 flex-basis: 35%;
                 opacity: 1;
-                transition: opacity .01s ease;
                 &:hover {
                     flex-basis: initial;
                     height: 80vw;
@@ -163,8 +162,8 @@
                 transition: opacity .01s ease;
                 padding: 0;
                 margin: 0;
-                width: 0px;
-                height: 0px;
+                height: 0;
+                width: 0;
             }
         }
     }

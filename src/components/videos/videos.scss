@@ -78,7 +78,7 @@
 
                 @include mobile {
                     flex-direction: row;
-                    width: 100%;
+                    width: 100vw;
                 }
                 p {
                     color: $mainLightColor;
