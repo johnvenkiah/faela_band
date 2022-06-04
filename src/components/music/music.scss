@@ -56,19 +56,36 @@
             justify-content: center;
             position: relative;
             opacity: 1;
-            transition: all .3s ease-in-out;
             box-shadow: #00000080 0 0 10px;
             text-shadow: #000 0 0 4px;
+            
+            @include tabletLandscape {
+                height: 220px;
+                width: 220px;
+                transition: none;
+
+                &:hover {
+                    flex-basis: initial;
+                    height: 80vw;
+                    max-height: 250px;
+                    width: 80vw;
+                    max-width: 250px;
+                }
+            }
 
             @include mobile {
                 height: 25vw;
                 width: 25vw;
                 flex-basis: 35%;
                 opacity: 1;
+                transition: none;
+
                 &:hover {
                     flex-basis: initial;
                     height: 80vw;
+                    max-height: 280px;
                     width: 80vw;
+                    max-width: 280px;
                 }
             }
 
@@ -99,9 +116,11 @@
                 position: absolute;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-end;
                 flex-wrap: wrap;
-                height: 60%;
+                height: 70%;
+                margin-top: 15px;
+                transition: all .3s ease-in-out;
                 
                 .playBtn {
                     text-decoration: none;
@@ -115,7 +134,6 @@
                     border-radius: 7px;
                     background-color: #2c0926b3;
                     opacity: 0;
-                    transition: all .3s ease-in-out;
                     box-shadow: #000 0 0 5px;
     
                     .logoSmall {
@@ -172,9 +190,9 @@
         }
 
         .hide {
-            @include mobile {
-                flex-basis: 80%;
-                transition: opacity .01s ease;
+            @include largemobile {
+                flex-basis: 50%;
+                transition: opacity .3s ease;
                 padding: 0;
                 margin: 0;
                 height: 0;

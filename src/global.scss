@@ -6,6 +6,7 @@ $smallTabletWidth: 768px;
 $largeMobileWidth: 395px;
 $heightSmall: 600px;
 $heightSmallLandscape: 400px;
+$heightTabletLandscape: 795px;
 
 @mixin mobile {
     @media (max-width: #{$smallTabletWidth}) {
@@ -27,6 +28,12 @@ $heightSmallLandscape: 400px;
 
 @mixin smallLandcape {
     @media (max-height: #{$heightSmallLandscape}) {
+        @content
+    }
+}
+
+@mixin tabletLandscape {
+    @media (max-height: #{$heightTabletLandscape}) and (orientation: landscape) {
         @content
     }
 }
