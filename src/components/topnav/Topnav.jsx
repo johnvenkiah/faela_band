@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './topnav.scss';
 
 export default function Topnav({ openMenu, setOpenMenu }) {
@@ -5,7 +6,7 @@ export default function Topnav({ openMenu, setOpenMenu }) {
     <div className={'topnav ' + (openMenu && 'active')}>
       <div className="wrapper">
         <div className="left">
-          <a href="#home" className="mainLogo">
+          <Link to="/" className="mainLogo">
             <img
               src={process.env.PUBLIC_URL + '/assets/faela_logo_white.png'}
               alt="Faela Logo"
@@ -16,18 +17,18 @@ export default function Topnav({ openMenu, setOpenMenu }) {
               alt="Faela Logo"
               className="logoImgInner"
             />
-          </a>
+          </Link>
           <div className="menuItem">
-            <a href="#music" className="navLink">
+            <Link to="/music" className="navLink">
               <i className="menuIcon fa-solid fa-headphones"></i>
               <span>Listen</span>
-            </a>
+            </Link>
           </div>
           <div className="menuItem">
-            <a href="#contact" className="navLink">
+            <Link to="/contact" className="navLink">
               <i className="menuIcon fa-solid fa-champagne-glasses"></i>
               <span>Book Us</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="right">
