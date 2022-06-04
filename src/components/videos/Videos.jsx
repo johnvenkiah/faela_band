@@ -39,7 +39,7 @@ export default function Videos() {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  wmode="Opaque"
+                  wmode="opaque"
                 ></iframe>
                 <p>{item.description}</p>
               </div>
