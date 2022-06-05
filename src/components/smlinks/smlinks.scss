@@ -5,16 +5,19 @@
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     overflow-x: visible;
+    margin-top: 25px;
     
     .smIconWrapper {
         overflow-x: visible;
         display: flex;
         align-items: center;
-        margin: 0 0 0 25px;
+        // margin: 0 0 0 25px;
         
         a {
+            align-items: center;
             overflow-x: visible;
             color: $mainDarkColor;
             transition: all .2s ease-in-out;
@@ -27,7 +30,7 @@
             
             i {
                 overflow-x: visible;
-                font-size: 1.3em;
+                font-size: 1.5em;
             }
         }
     }

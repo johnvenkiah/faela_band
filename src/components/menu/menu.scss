@@ -11,18 +11,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     transition: all .5s ease;
     z-index: 1000;
 
     @include mobile {
-        top: 35px;
+        top: 70px;
         width: 100%;
         right: -100%;
     }
 
     @include smallLandcape {
-        top: 35px;
+        top: 70px;
     }
 
     &.active {
@@ -39,18 +39,26 @@
         font-weight: bold;
         text-transform: uppercase;
         color: $mainDarkColor;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 70%;
 
         li {
-        margin: 25px;
-        height: 50px;
+        margin: 15px;
         transition: all .2s ease;
         overflow-x: visible;
         list-style: none;
         
         @include smallLandcape {
+            font-size: 20px;
+            margin: 10px;
+            height: 20px;
+        }
+        
+        @include largemobile {
             font-size: 25px;
-            margin: 15px;
-            height: 27px;
+            // margin: 18px;
         }
             a {
                 font-size: inherit;
