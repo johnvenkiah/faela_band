@@ -4,11 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include smallLandcape {
+        justify-content: flex-start;
+    }
     
     h1 {
         text-shadow: #000 0 0 8px;
         color: $mainOrange;
         margin: 20px auto;
+
+        @include smallLandcape {
+            margin: 0 auto;
+        }
     }
 
     ul {
@@ -36,6 +44,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        overflow: visible;
         
         @include mobile {
             flex: .8;
@@ -45,6 +54,8 @@
 
         @include smallLandcape {
             width: 100%;
+            flex: 1;
+            margin-top: 0;
         }
 
         .album {
@@ -94,8 +105,8 @@
 
                 &:hover {
                     flex-basis: initial;
-                    height: 37vw;
-                    width: 37vw;
+                    height: 170px;
+                    width: 170px;
                 }
             }
 
@@ -109,6 +120,10 @@
                 top: 32px;
                 position: absolute;
                 color: $mainLightColor;
+
+                @include smallLandcape {
+                    top: 27px;
+                }
             }
 
             .playBtnContainer {
@@ -120,6 +135,10 @@
                 height: 70%;
                 margin-top: 15px;
                 transition: all .3s ease-in-out;
+
+                @include smallLandcape {
+                    margin-top: 26px;
+                }
                 
                 .playBtn {
                     text-decoration: none;
@@ -147,6 +166,10 @@
     
                     span {
                         font-size: 13px;
+
+                        @include smallLandcape {
+                            display: none;
+                        }
                     }
     
                     .fa-spotify {
