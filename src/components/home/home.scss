@@ -75,6 +75,10 @@
             text-transform: uppercase;
             text-shadow: #000 0 0 8px;
             transition: all .5s ease;
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
     }
 
@@ -118,8 +122,8 @@
             }
 
             h3 {
-                margin-top: 40%;
-                margin-bottom: 20%;
+                margin-top: 15%;
+                margin-bottom: 8%;
                 font-size: 45px;
 
                 @include mobile {
