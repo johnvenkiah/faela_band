@@ -5,7 +5,7 @@
     width: 300px;
     height: 100vh;
     position: fixed;
-    top: 0;
+    top: 70px;
     right: -300px;
     z-index: 2;
     display: flex;
@@ -16,13 +16,8 @@
     z-index: 1000;
 
     @include mobile {
-        top: 70px;
         width: 100%;
         right: -100%;
-    }
-
-    @include smallLandcape {
-        top: 70px;
     }
 
     &.active {
@@ -44,6 +39,10 @@
         flex-direction: column;
         height: 70%;
 
+        @include smallLandcape {
+            justify-content: flex-start;
+        }
+
         li {
         margin: 15px;
         transition: all .2s ease;
@@ -52,7 +51,7 @@
         
         @include smallLandcape {
             font-size: 20px;
-            margin: 10px;
+            margin: 7px;
             height: 20px;
         }
         

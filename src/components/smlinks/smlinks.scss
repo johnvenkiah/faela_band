@@ -9,12 +9,15 @@
     justify-content: space-around;
     overflow-x: visible;
     margin-top: 25px;
+
+    @include smallLandcape {
+        margin-top: 0px;
+    }
     
     .smIconWrapper {
         overflow-x: visible;
         display: flex;
         align-items: center;
-        // margin: 0 0 0 25px;
         
         a {
             align-items: center;

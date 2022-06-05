@@ -8,6 +8,10 @@
         align-items: center;
     }
 
+    @include smallLandcape {
+        flex-direction: row;
+    }
+
     h1 {
         font-size: 25px;
     }
@@ -27,7 +31,7 @@
             float: right;
 
             @include smallLandcape {
-                height: 100vh;
+                height: 80vh;
             }
 
             @include mobile {
@@ -40,6 +44,10 @@
 
                 @include mobile {
                     height: 80%;
+                }
+
+                @include smallLandcape {
+                    height: 200px;
                 }
             }
         }
@@ -95,7 +103,7 @@
                 }
 
                 @include smallLandcape {
-                    margin-top: 10%;
+                    margin-top: 0%;
                     margin-bottom: 5%;
                     font-size: 25px;
                 }
