@@ -26,8 +26,8 @@ export default function Topnav({ openMenu, setOpenMenu }) {
           </div>
           <div className="menuItem">
             <Link to="/contact" className="navLink">
-              <i className="menuIcon fa-solid fa-champagne-glasses"></i>
-              <span>Book Us</span>
+              <i className="menuIcon fa-solid fa-envelope"></i>
+              <span>Contact/Press</span>
             </Link>
           </div>
         </div>

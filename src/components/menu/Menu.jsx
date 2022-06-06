@@ -9,7 +9,7 @@ export default function Menu({ openMenu, setOpenMenu }) {
     '/videos': 'Videos',
     '/live': 'Live',
     '/about': 'About',
-    '/contact': 'Contact',
+    '/contact': 'Contact/Press',
   };
 
   const menuMarkup = Object.keys(menuItems).map((key) => (

@@ -116,5 +116,25 @@
                 transition: all .5s ease;
             }
         }
+
+        a {
+            text-decoration: none;
+            color: $mainLightColor;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all .3s ease;
+            overflow: visible;
+            margin-bottom: 30px;
+
+            @include largemobile {
+                width: 70%;
+                text-align: center;
+            }
+
+            &:hover {
+                color: $mainOrange;
+                transform: scale(1.05);
+            }
+        }
     }
 }
