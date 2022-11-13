@@ -12,9 +12,9 @@ export default function Menu({ openMenu, setOpenMenu }) {
     '/contact': 'Contact/Press',
   };
 
-  const menuMarkup = Object.keys(menuItems).map((key) => (
-    <li onClick={() => setOpenMenu(false)}>
-      <Link to={key}>{menuItems[key]}</Link>
+  const menuMarkup = Object.keys(menuItems).map((nr) => (
+    <li key={nr.toString()} onClick={() => setOpenMenu(false)}>
+      <Link to={nr}>{menuItems[nr]}</Link>
     </li>
   ));
 

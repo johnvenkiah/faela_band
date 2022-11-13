@@ -28,7 +28,7 @@ export default function SmLinks({ openMenu, setOpenMenu }) {
     <div key={i} className="smIconWrapper">
       <a
         href={item.url}
-        ariaLabel={item.ariaLabel}
+        aria-label={item.ariaLabel}
         target="_blank"
         rel="noreferrer"
         className="navLink"
