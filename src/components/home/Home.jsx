@@ -8,8 +8,8 @@ export default function Home() {
       <div className="vidContainerHome">
         <iframe
           src="https://www.youtube-nocookie.com/embed/4LGCXLC9Nyg"
-          title="FAELA Junio &&&& Julia"
-          frameBorder="0"
+          title="FAELA Junio & Julia"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
