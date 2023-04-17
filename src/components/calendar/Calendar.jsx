@@ -1,5 +1,3 @@
-/* global gapi */
-
 import React, { Component } from 'react';
 import moment from 'moment';
 import momentDurationFormatSetup from 'moment-duration-format';
@@ -25,52 +23,46 @@ export default class Calendar extends Component {
   };
 
   getEvents() {
-    let that = this;
-    function start() {
-      gapi.client
-        .init({
-          apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-        })
-        .then(function () {
-          return gapi.client.request({
-            path: `https://www.googleapis.com/calendar/v3/calendars/${process.env.REACT_APP_CALENDAR_ID}/events?singleEvents=True&orderBy=startTime&timeMin=${moment().toISOString()}&timeMax=${moment()
-              .add(1, 'y')
-              .toISOString()}`,
-          });
-        })
-        .then(
-          (response) => {
-            let events = response.result.items;
-            if (events.length > 0) {
-              that.setState({
-                events: events,
-                isLoading: false,
-                isEmpty: false,
-              });
-            } else {
-              that.setState({
-                isEmpty: true,
-                isLoading: false,
-              });
-            }
-          },
-          function (reason) {
-            console.log(reason);
-          }
-        );
+    const PORT = process.env.PORT || 3000;
+    let apiUrl = `http://localhost:${PORT}/api/calendar/events`;
+    if (process.env.NODE_ENV === 'production') {
+      apiUrl = '/api/calendar/events';
     }
-    gapi.load('client', start);
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        let events = data;
+        if (events.length > 0) {
+          this.setState({
+            events: events,
+            isLoading: false,
+            isEmpty: false,
+          });
+        } else {
+          this.setState({
+            isEmpty: true,
+            isLoading: false,
+          });
+        }
+      })
+      .catch((error) => {
+        console.error('This is the error: ', error);
+      });
   }
 
   render() {
     const { events } = this.state;
-
     let eventsList = events.map(function (event) {
       if (event.description) {
+        let descr = event.description;
+        descr = descr.slice(descr.lastIndexOf('https:'));
+        descr = descr.replace('</u>', '');
+        descr = descr.replace('</a>', '');
+
         return (
           <a
             className="list-group-item"
-            href={event.description}
+            href={descr}
             target="_blank"
             rel="noreferrer"
             key={event.id}
