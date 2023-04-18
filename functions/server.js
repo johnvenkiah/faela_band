@@ -21,14 +21,14 @@ exports.handler = async (event, context) => {
     const res = {
       json: (data) => ({
         statusCode: 200,
-        body: data,
-        // body: JSON.stringify(data),
+        // body: data,
+        body: JSON.stringify(data),
       }),
       status: (statusCode) => ({
         json: (data) => ({
           statusCode,
-          body: data,
-          // body: JSON.stringify(data),
+          // body: data,
+          body: JSON.stringify(data),
         }),
       }),
     };
