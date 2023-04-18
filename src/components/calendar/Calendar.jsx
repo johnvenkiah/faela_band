@@ -26,7 +26,7 @@ export default class Calendar extends Component {
     const PORT = process.env.PORT || 3000;
     let apiUrl = `http://localhost:${PORT}/api/calendar/events`;
     if (process.env.NODE_ENV === 'production') {
-      apiUrl = '/api/calendar/events';
+      apiUrl = 'https://www.faela-band.com/api/calendar/events';
     }
     fetch(apiUrl)
       .then((response) => response.json())
