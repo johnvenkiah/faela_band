@@ -25,7 +25,7 @@ export default class Calendar extends Component {
   getEvents() {
     let apiUrl = 'http://localhost:3000/api/calendar/events';
     if (process.env.NODE_ENV === 'production') {
-      apiUrl = 'https://faela-band.netlify.app/api/calendar/events';
+      apiUrl = 'https://faela-band.com/api/calendar/events';
     }
     fetch(apiUrl)
       .then((response) => response.json())
