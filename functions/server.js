@@ -1,8 +1,9 @@
 const app = require('../server');
+const cors = require('cors');
 
 exports.handler = async (event, context) => {
   const { httpMethod, path } = event;
-
+  app.use(cors());
   if (httpMethod !== 'GET' || !path.startsWith('/api/calendar/events')) {
     return {
       statusCode: 404,
