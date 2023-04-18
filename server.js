@@ -14,6 +14,18 @@ const GOOGLE_CALENDAR_ID = process.env.CALENDAR_ID;
 const PORT = process.env.PORT;
 
 app.get('/api/calendar/events', async (req, res) => {
+  res.set('Access-Control-Allow-Origin', 'https://faela-band.com');
+  const allowedOrigins = [
+    'http://localhost:3002',
+    'http://localhost:3001',
+    'http://localhost:3000',
+    'https://faela-band.com',
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.set('Access-Control-Allow-Origin', origin);
+  }
+
   try {
     const jwtClient = new google.auth.JWT(
       GOOGLE_CLIENT_EMAIL,
