@@ -27,7 +27,7 @@ export default class Calendar extends Component {
     if (process.env.NODE_ENV === 'production') {
       apiUrl = 'https://faela-band.com/api/calendar/events';
     }
-    fetch(apiUrl)
+    fetch(apiUrl, { mode: 'cors' })
       .then((response) => response.json())
       .then((data) => {
         let events = data;
