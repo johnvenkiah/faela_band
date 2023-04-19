@@ -17,8 +17,13 @@ export default class Calendar extends Component {
 
   componentDidMount = () => {
     this.getEvents();
-    setInterval(() => {
+    this.startPolling();
+  };
+
+  startPolling = () => {
+    setTimeout(() => {
       this.getEvents();
+      this.startPolling();
     }, 60000);
   };
 
