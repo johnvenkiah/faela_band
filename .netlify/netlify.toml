@@ -1,0 +1,7 @@
+[build]
+  Functions = "functions"
+  publish = "build"
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server-test"
+  status = 200
