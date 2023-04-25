@@ -1,7 +1,7 @@
 [build]
   Functions = "functions"
-  publish = "build"
+  publish = "build:backend"
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/server-test"
+  to = "/.netlify/functions/server"
   status = 200
