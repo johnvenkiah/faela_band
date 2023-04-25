@@ -1,6 +1,7 @@
 const express = require('express');
 const { google } = require('googleapis');
 const cors = require('cors');
+const serverless = require('serverless-http');
 require('dotenv').config();
 
 const app = express();
@@ -47,3 +48,4 @@ if (process.env.NODE_ENV === 'development') {
   app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 }
 module.exports = app;
+module.exports.handler = serverless(app);
