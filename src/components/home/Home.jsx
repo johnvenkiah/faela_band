@@ -9,7 +9,7 @@ export default function Home() {
         <iframe
           src="https://www.youtube-nocookie.com/embed/4LGCXLC9Nyg"
           title="FAELA Junio & Julia"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
