@@ -1,5 +1,16 @@
 const albumData = [
   {
+    id: 'latin_animal_beats',
+    img_url: '/assets/cover_faela_lab.jpg',
+    alt_attr: 'Faela Latin Animal Beats Cover',
+    title: 'Latin Animal Beats (2023)',
+    spotify_url:
+      'https://open.spotify.com/album/0mwzwuxBWgSku8TAt4MDNf?si=MAdyp3EqS426pvJr0m8UNA',
+    apple_url: 'https://music.apple.com/us/album/latin-animal-beats/1679545427',
+    tidal_url: 'https://tidal.com/browse/album/285802621',
+    deezer_url: 'https://deezer.page.link/ZUEqoMfovCs78WsV6',
+  },
+  {
     id: 'por_el_mundo',
     img_url: '/assets/cover_faela_porelmundo.jpg',
     alt_attr: 'Faela Por El Mundo Album Cover',

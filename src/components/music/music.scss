@@ -65,9 +65,8 @@
             }
 
             @include largemobile {
-                height: 25vw;
-                width: 25vw;
-                flex-basis: 35%;
+                height: 48vw;
+                flex-basis: 60%;
                 opacity: 1;
 
                 &:hover {
