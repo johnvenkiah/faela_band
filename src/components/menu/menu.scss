@@ -58,6 +58,7 @@
         
         @include largemobile {
             font-size: 25px;
+            margin: 15px auto;
         }
             a {
                 font-size: inherit;
@@ -68,7 +69,6 @@
 
             &:hover {
                 transform: scale(1.1);
-                padding-left: 4px;
                 color: $mainLightColor;
                 text-shadow: $mainDarkColor 0 0 9px;
             }

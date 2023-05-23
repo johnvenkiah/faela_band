@@ -25,7 +25,6 @@ export default function Home() {
           <h3>Out Now</h3>
           <Link to="/music" className="btnMain">
             <p>Continue to music</p>
-            <i className="fa-solid fa-chevron-down"></i>
           </Link>
         </div>
       </div>

@@ -3,6 +3,11 @@ import './videos.scss';
 export default function Videos() {
   const video_urls = [
     {
+      title: 'Junio & Julia',
+      url: '4LGCXLC9Nyg',
+      description: 'Live at Moriskan, Malmö 2022',
+    },
+    {
       title: 'Perro Fiel',
       url: 'zOrhSgxerjs',
       description: "Faela's new song with footage from Boa Vista, Cap Verde",
@@ -34,7 +39,7 @@ export default function Videos() {
               <h3>{item.title}</h3>
               <div className="textWrapper">
                 <iframe
-                  src={`https://www.youtube.com/embed/${item.url}?wmode=transparent`}
+                  src={`https://www.youtube-nocookie.com/embed/${item.url}?wmode=transparent`}
                   title={`YouTube video - ${item.title}`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
