@@ -7,7 +7,7 @@ export default function Home() {
       <div className="left">
         <a
           className="imgContainer"
-          href="https://www.havtornrecords.com/store/faela-latin-animal-beats-cd"
+          href="https://open.spotify.com/album/0mwzwuxBWgSku8TAt4MDNf?si=dl-ZJOV3T6mRflZa7BC4UQ"
           rel="noreferrer"
           target="_blank"
         >
