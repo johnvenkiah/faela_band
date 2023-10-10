@@ -5,7 +5,7 @@ export default function Music({ hideElements, setHideElements }) {
   return (
     <div className="music" id="music">
       <h1>Music</h1>
-      <div className="container">
+      <div className="container" onScroll={() => setHideElements(false)}>
         {albumData.map((item, i) => (
           <div
             key={i}
