@@ -28,7 +28,8 @@ export default class Calendar extends Component {
   };
 
   getEvents() {
-    fetch('https://faela-be.onrender.com/events')
+    fetch('/.netlify/functions/events?endpoint=events')
+      // fetch('https://faela-be.onrender.com/events')
       .then((response) => response.json())
       .then((data) => {
         let events = data;

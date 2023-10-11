@@ -7,12 +7,7 @@ export default function Music({ hideElements, setHideElements }) {
       <h1>Music</h1>
       <div className="container" onScroll={() => setHideElements(false)}>
         {albumData.map((item, i) => (
-          <div
-            key={i}
-            className={'album' + (hideElements ? hideElements && ' hide' : '')}
-            onMouseOver={() => setHideElements(true)}
-            onMouseLeave={() => setHideElements(false)}
-          >
+          <div key={i} className="album">
             <img
               className="albumCover"
               src={process.env.PUBLIC_URL + item.img_url}
