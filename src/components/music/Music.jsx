@@ -1,13 +1,40 @@
+import React, { useRef } from 'react';
 import albumData from '../musicList/MusicList';
 import './music.scss';
 
 export default function Music({ hideElements, setHideElements }) {
+  const containerRef = useRef(null);
+
+  const scrollToAlbum = (index) => {
+    const container = containerRef.current;
+    const album = container.querySelectorAll('.album')[index];
+
+    if (album) {
+      const containerRect = container.getBoundingClientRect();
+      const albumRect = album.getBoundingClientRect();
+      const yOffset =
+        albumRect.top -
+        containerRect.top -
+        containerRect.height / 2 +
+        albumRect.height / 2;
+      window.scrollTo({
+        top: window.scrollY + yOffset,
+        behavior: 'smooth',
+      });
+      console.log(window.scrollY + yOffset);
+    }
+  };
+
   return (
     <div className="music" id="music">
       <h1>Music</h1>
-      <div className="container" onScroll={() => setHideElements(false)}>
+      <div
+        className="container"
+        onScroll={() => setHideElements(false)}
+        ref={containerRef}
+      >
         {albumData.map((item, i) => (
-          <div key={i} className="album">
+          <div key={i} className="album" onClick={() => scrollToAlbum(i)}>
             <img
               className="albumCover"
               src={process.env.PUBLIC_URL + item.img_url}

@@ -14,7 +14,6 @@ import Menu from './components/menu/Menu';
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
-  const [hideElements, setHideElements] = useState(false);
 
   function setDocHeight() {
     document.documentElement.style.setProperty(
@@ -36,15 +35,7 @@ function App() {
         <div className="background"></div>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route
-            path="/music"
-            element={
-              <Music
-                hideElements={hideElements}
-                setHideElements={setHideElements}
-              />
-            }
-          />
+          <Route path="/music" element={<Music />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/live" element={<Live />} />
           <Route path="/about" element={<About />} />

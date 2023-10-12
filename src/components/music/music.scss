@@ -51,7 +51,7 @@
             opacity: 1;
             box-shadow: #00000080 0 0 10px;
             text-shadow: #000 0 0 4px;
-            transition: .4s opacity ease;
+            transition: .4s all ease;
             
             @include tabletLandscape {
                 height: 220px;
@@ -70,11 +70,13 @@
                 opacity: 1;
 
                 &:hover {
-                    flex-basis: initial;
-                    height: 80vw;
-                    max-height: 280px;
-                    width: 80vw;
-                    max-width: 280px;
+                    // flex-basis: initial;
+                    // height: 80vw;
+                    // max-height: 280px;
+                    // width: 80vw;
+                    // max-width: 280px;
+                    z-index: 3;
+                    transform: scale(1.6);
                 }
             }
 
@@ -93,15 +95,22 @@
                 padding: 0 3px;
                 top: 6px;
                 font-weight: bold;
+                @include largemobile {
+                    font-size: .75rem;
+                }
             }
 
             p {
                 top: 32px;
                 position: absolute;
                 color: $mainLightColor;
-
+                
                 @include smallLandcape {
                     top: 27px;
+                }
+                @include largemobile {
+                    font-size: .65rem;
+                    top: 22px;
                 }
             }
 
@@ -112,9 +121,12 @@
                 align-items: flex-end;
                 flex-wrap: wrap;
                 height: 70%;
-                margin-top: 15px;
+                margin-top: 1.3rem;
                 transition: all .3s ease-in-out;
 
+                @include largemobile {
+                    margin-top: 1.3rem;
+                }
                 @include smallLandcape {
                     margin-top: 26px;
                 }
@@ -125,7 +137,7 @@
                     width: 31%;
                     font-size: 20px;
                     text-shadow: #00000080 0 0 3px;
-                    padding: 8px 4px;
+                    padding: 0.4rem 0.2rem;
                     margin: 10px;
                     text-align: center;
                     border-radius: 7px;
@@ -133,11 +145,21 @@
                     opacity: 0;
                     box-shadow: #000 0 0 5px;
                     transition: all .3s ease-in-out;
+                    
+                    @include largemobile {
+                        margin: .4rem;
+                        width: 34%;
+                        font-size: .7rem;
+                    }
     
                     .logoSmall {
                         width: 20px;
                         border-radius: 2px;
                         margin: 0 auto;
+                        
+                        @include largemobile {
+                            width: .7rem;
+                        }
                     }
     
                     i, .logoSmall {
@@ -145,8 +167,11 @@
                     }
     
                     span {
-                        font-size: 13px;
+                        font-size: .8rem;
 
+                        @include largemobile {
+                            font-size: .5rem;
+                        }
                         @include smallLandcape {
                             display: none;
                         }
@@ -193,15 +218,6 @@
                     opacity: 1;
                     transform: scale(1.1);
                 }
-            }
-        }
-
-        .hide {
-            @include largemobile {
-                padding: 0;
-                margin: 0;
-                height: 0;
-                width: 0;
             }
         }
     }
