@@ -50,7 +50,7 @@ export default function About() {
                   <strong>Cristoffer Csanady</strong> - Vocals/Bass
                 </p>
                 <p className="singleLine">
-                  <strong>Göran Abelli</strong> - Trombone
+                  <strong>Johan Kolsut</strong> - Drums
                 </p>
                 <p className="singleLine">
                   <strong>Rasmus Nyvall</strong> - Saxophone/Clarinet
